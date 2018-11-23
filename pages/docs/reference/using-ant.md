@@ -78,6 +78,9 @@ recommended to use *withKotlin* task:
         </javac>
         <jar destfile="hello.jar">
             <fileset dir="classes"/>
+            <manifest>
+                <attribute name="Main-Class" value="MyMainClass"/>
+            </manifest>
         </jar>
     </target>
 </project>
